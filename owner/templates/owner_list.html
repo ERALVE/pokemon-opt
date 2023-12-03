@@ -5,11 +5,27 @@
     <title>Mi primera APP en Django</title>
 </head>
 <body>
+{% extends "base_generic.html" %}
+
+
+{% block content %}
     <p>La URL hija esta funcionando!!</p>
     <h1>Nombre de Owner: {{ data.nombre }}</h1>
     <h1>Edad de Owner: {{ data.edad }}</h1>
     <h1>Pais de Owner: {{ data.pais }}</h1>
     <h1>DNI de Owner: {{ data.dni }}</h1>
     <h1>Usuario de Owner: {{ data.vigente }}</h1>
+
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button>
+{% endblock %}
 </body>
 </html>
